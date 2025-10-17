@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Yayasan Tarumanagara Website
 
-## Getting Started
+Website resmi **Yayasan Tarumanagara** yang sedang dikembangkan oleh **Tarumanagara Web Dev Team**.  
+Proyek ini bertujuan untuk memperkuat branding, transparansi, dan akses informasi publik mengenai kegiatan, sejarah, serta kontribusi Yayasan Tarumanagara di bidang pendidikan, kesehatan, dan sosial.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Project Overview
+
+Website ini dirancang menggunakan arsitektur modern berbasis **Next.js + Tailwind CSS** dengan integrasi CMS Headless untuk memudahkan pengelolaan konten secara dinamis oleh tim Yayasan.
+
+### ✳️ Fitur Utama
+- Profil Yayasan dan sejarah pendirian  
+- Berita, acara, dan publikasi kegiatan  
+- Dokumentasi CSR dan kerja sama institusi  
+- Integrasi CMS untuk pengelolaan konten internal  
+- Desain responsif dan mobile-friendly  
+
+---
+
+## 🧩 Tech Stack
+
+| Layer | Tools / Framework |
+|-------|-------------------|
+| Frontend | Next.js 14, React, Tailwind CSS |
+| Backend | Node.js, Supabase / Sanity CMS |
+| Deployment | Vercel |
+| Design System | Figma + Component Library |
+| Version Control | Git & GitHub |
+
+---
+
+## 🛠️ Setup & Installation
+
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/<username>/<repository-name>.git
+   cd <repository-name>
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run development server**
+   ```bash
+   npm run dev
+   ```
+   Lalu buka [http://localhost:3000](http://localhost:3000) di browser.
+
+4. **Build for production**
+   ```bash
+   npm run build
+   npm run start
+   ```
+
+---
+
+## 🧱 Folder Structure
+
+```
+/src
+ ├── components/     # Reusable UI components
+ ├── pages/          # Next.js pages
+ ├── styles/         # Global CSS & Tailwind config
+ ├── lib/            # Utility & CMS integration
+ ├── public/         # Static assets
+ └── data/           # JSON & content data
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 👥 Project Team — Tarumanagara Web Dev Team
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Member | Role | Core Responsibilities |
+|--------|------|------------------------|
+| **Budi** | Project Lead + Backend Engineer | Architecture, CMS API, deployment, mentoring juniors |
+| **Hans** | Frontend Developer | Component structure, dynamic rendering, client-side logic |
+| **Suellen** | Graphic Designer + Backend Trainee | Design system, visual QA, assisted backend setup |
+| **Vania** | Copywriter + Data/Backend Trainee | Content writing, CMS documentation, dataset handling |
+| **Ivan** | Graphic Designer + Frontend Trainee | Component visuals, layout adaptation, mobile responsiveness |
+| **Laura** | Graphic Designer + Backend Trainee | Visual polishing, CMS support, documentation |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 💡 Development Guidelines
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Gunakan **branch** baru untuk setiap fitur atau modul (`feature/homepage`, `feature/news-section`).
+- Selalu **commit** dengan pesan yang jelas dan konsisten:
+  ```
+  feat: add homepage hero section
+  fix: resolve responsive layout issue
+  docs: update README with setup guide
+  ```
+- Lakukan **pull request (PR)** ke branch utama (`main`) setelah fitur diuji dan direview.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧭 Deployment Workflow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push perubahan ke GitHub.
+2. Vercel otomatis melakukan build dan deployment.
+3. Cek hasil di:  
+   🔗 [https://yayasan-tarumanagara.vercel.app](https://yayasan-tarumanagara.vercel.app)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🏛️ About Yayasan Tarumanagara
+
+**Yayasan Tarumanagara** adalah lembaga yang menaungi berbagai institusi pendidikan dan layanan sosial di bawah grup Tarumanagara — termasuk **Universitas Tarumanagara (UNTAR)**, **Institut Tarumanagara (ITARU)**, dan **RS Royal Taruma** — dengan visi mewujudkan kontribusi nyata bagi kemajuan bangsa.
+
+---
+
+📘 **Developed with dedication by Tarumanagara Web Dev Team**  
+© 2025 Yayasan Tarumanagara. All rights reserved.
