@@ -1,103 +1,101 @@
-import Image from "next/image";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Search, Instagram, Youtube, Linkedin, Globe2, LogIn } from "lucide-react";
 
-export default function Home() {
+export default function TarumanagaraHero() {
+  const [lang, setLang] = useState("ID");
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+	<>
+	  <span className="sr-only">Media Sosial</span>
+	  <div className="flex items-center gap-3">
+		<a aria-label="Instagram" href="#" className="opacity-80 transition hover:opacity-100"><Instagram size={16} /></a>
+		<a aria-label="YouTube" href="#" className="opacity-80 transition hover:opacity-100"><Youtube size={16} /></a>
+		<a aria-label="LinkedIn" href="#" className="opacity-80 transition hover:opacity-100"><Linkedin size={16} /></a>
+		<span className="mx-2 text-slate-400">|</span>
+		<button className="inline-flex items-center gap-1 opacity-90 transition hover:opacity-100">
+		  <LogIn size={16} />
+		  <span>Sign In</span>
+		</button>
+		<span className="mx-2 text-slate-400">|</span>
+		<button
+		  className="inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 ring-1 ring-white/10 hover:bg-white/5"
+		  onClick={() => setLang((p) => (p === "ID" ? "EN" : "ID"))}
+		  aria-label="Language switcher"
+		>
+		  <Globe2 size={16} />
+		  <span className="font-medium">{lang}</span>
+		</button>
+	  </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+	  {/* Navigation */}
+	  <header className="relative z-30">
+		<div className="mx-auto max-w-7xl px-6 pt-3">
+		  <div className="flex items-center justify-between rounded-2xl bg-slate-900/35 px-4 py-3 backdrop-blur supports-[backdrop-filter]:bg-slate-900/30 ring-1 ring-white/10">
+			<div className="flex items-center gap-3">
+			  <img src="/logo-yayasan.svg" alt="Yayasan Tarumanagara" className="h-8 w-auto" />
+			</div>
+
+
+			<nav className="hidden lg:block">
+			  <ul className="flex items-center gap-10 text-sm text-slate-100">
+				{[
+				  "Tentang Kami",
+				  "Berita & Kegiatan",
+				  "Unit Kami",
+				  "Kerja Sama",
+				  "Karir",
+				].map((item) => (
+				  <li key={item}>
+					<a
+					  href="#"
+					  className="opacity-90 transition hover:opacity-100 hover:underline underline-offset-8"
+					>
+					  {item}
+					</a>
+				  </li>
+				))}
+			  </ul>
+			</nav>
+
+
+			<button
+			  aria-label="Cari"
+			  className="inline-flex items-center gap-2 rounded-xl px-3 py-2 ring-1 ring-white/10 transition hover:bg-white/5"
+			>
+			  <Search className="h-5 w-5" />
+			  <span className="hidden sm:inline text-sm">Cari</span>
+			</button>
+		  </div>
+		</div>
+	  </header>
+
+
+	  {/* Hero copy */}
+	  <div className="relative z-20 mx-auto flex max-w-7xl flex-col px-6 pt-14 md:pt-20 lg:pt-24">
+		<motion.div
+		  initial={{ opacity: 0, y: 24 }}
+		  animate={{ opacity: 1, y: 0 }}
+		  transition={{ duration: 0.6, ease: "easeOut" }}
+		  className="w-full max-w-3xl"
+		>
+		  <p className="font-serif text-xl text-slate-100/90 drop-shadow md:text-2xl">
+			Tarumanagara Foundation
+		  </p>
+		  <h1 className="mt-2 font-extrabold tracking-tight text-slate-50 drop-shadow-2xl text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
+			PRIDE IN EXCELLENCE
+		  </h1>
+		</motion.div>
+
+
+		{/* Decorative bottom fade */}
+		<div className="pointer-events-none mt-12 h-28 w-full bg-gradient-to-b from-transparent to-slate-950/80" />
+	  </div>
+
+
+	  {/* Subtle vignette */}
+	  <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/5" />
+	</>
   );
 }
