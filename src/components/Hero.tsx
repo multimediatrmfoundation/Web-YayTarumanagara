@@ -13,21 +13,6 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/70"></div>
 
-      <header className="absolute top-0 left-0 w-full z-20 bg-black/30 backdrop-blur-sm text-white">
-        <nav className="flex justify-between items-center max-w-7xl mx-auto py-4 text-sm font-roboto">
-          <div className="flex items-center space-x-3">
-            <Image src="/logoyay.png" alt="Yayasan Tarumanagara" width={200} height={40} />
-          </div>
-          <ul className="flex items-center space-x-6">
-            <li><a href="#" className="hover:text-gray-300">Tentang Kami</a></li>
-            <li><a href="#" className="hover:text-gray-300">Berita & Kegiatan</a></li>
-            <li><a href="#" className="hover:text-gray-300">Unit Kami</a></li>
-            <li><a href="#" className="hover:text-gray-300">Kerja Sama</a></li>
-            <li><a href="#" className="hover:text-gray-300">Karir</a></li>
-          </ul>
-        </nav>
-      </header>
-
       <div className="absolute inset-0 flex flex-col justify-end text-white pb-32 px-8 md:px-24 z-10">
         <p className="text-lg md:text-xl font-light tracking-wide mb-2 font-roboto">Tarumanagara Foundation</p>
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide leading-tight font-roboto">

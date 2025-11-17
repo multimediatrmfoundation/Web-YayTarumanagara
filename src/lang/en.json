@@ -1,0 +1,15 @@
+{
+  "header": {
+    "socialLabel": "Social Media",
+    "signIn": "Sign In",
+    "logoAlt": "Tarumanagara Foundation Logo",
+    "searchAria": "Search this site",
+    "nav": {
+      "about": "About Us",
+      "news": "News & Events",
+      "units": "Our Units",
+      "cooperation": "Partnerships",
+      "career": "Careers"
+    }
+  }
+}

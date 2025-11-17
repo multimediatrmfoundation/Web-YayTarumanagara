@@ -1,0 +1,15 @@
+{
+  "header": {
+    "socialLabel": "Media Sosial",
+    "signIn": "Sign In",
+    "logoAlt": "Logo Yayasan Tarumanagara",
+    "searchAria": "Cari di situs",
+    "nav": {
+      "about": "Tentang Kami",
+      "news": "Berita & Kegiatan",
+      "units": "Unit Kami",
+      "cooperation": "Kerja Sama",
+      "career": "Karir"
+    }
+  }
+}
